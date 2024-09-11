@@ -1,0 +1,17 @@
+server:
+  port: 8080
+management:
+  server:
+    port: 8081
+  endpoints:
+    web:
+      exposure:
+        include: prometheus, health
+    health:
+      show-details: always
+spring:
+  application:
+    name: java-metrics-demo
+code:
+  code_builder: grahamzhu
+  git_release: 5fadsfkhd
